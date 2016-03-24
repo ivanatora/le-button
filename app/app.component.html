@@ -1,0 +1,3 @@
+<div *ngIf="iScore >= 12" class="score">Score: {{iScore}}</div>
+<button (click)="doClick()" [ngClass]="{fancy: iScore >= 15}">Le Button</button>
+<div class="message">{{sMessage}}</div>
