@@ -14,6 +14,7 @@ import {MessageService} from './message.service';
 export class AppComponent {
     iScore: number = 0;
     sMessage: string = 'Click the button';
+    bOtherButtonDisabled = false;
     
     constructor(private _messageService: MessageService){ }
     
@@ -24,5 +25,10 @@ export class AppComponent {
         this._messageService.getMessageByScore(this.iScore).then(function(res){
             if (typeof res != 'undefined' && typeof res.content != 'undefined') me.sMessage = res.content;
         });
+    }
+    
+    doOtherClick(){
+        this.bOtherButtonDisabled = true;
+        this.sMessage = "Why did you do that? I can't believe you are still alive with that adventurous clicking on weird buttons!";
     }
 }
