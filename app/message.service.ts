@@ -11,12 +11,10 @@ export class MessageService {
     getMessageByScore(score: number){
         return Promise.resolve(MESSAGES).then(function(arr){
             for (var i in arr){
-                if (arr[i].score >= score) {
+                if (arr[i].score == score) {
                     return arr[i];
                 }
             }
-            // no message were found, return empty message
-//            return {content: ''}; // probably not the brightest method of doing it
         });
     }
 }
