@@ -11,4 +11,7 @@ export var MESSAGES: Message[] = [
     {score: 16, content: "Fancy? Maybe my brain is damaged from using `curses` too much..."},
     {score: 20, content: "It is getting a bit repetative, eh?"},
     {score: 25, content: "There is a cake waiting for you when you reach 1000 pts"},
+    {score: 35, content: "You know where this is heading, right?"},
+    {score: 40, content: "Come on, even I'm bored now. What are you still doing here?"},
+    {score: 45, content: "Should we do something more engaging?"},
 ]
