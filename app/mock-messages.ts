@@ -8,7 +8,7 @@ export var MESSAGES: Message[] = [
     {score: 9, content: "Sorry, I won't interrupt you more. This is supposed to be a game."},
     {score: 12, content: "In a game you must have a Score"},
     {score: 15, content: "And fancy controls"},
-    {score: 16, content: "Fancy? Maybe my brain is damaged from using `curses` too much..."},
+    {score: 17, content: "Fancy? Maybe my brain is damaged from using `curses` too much..."},
     {score: 20, content: "It is getting a bit repetative, eh?"},
     {score: 25, content: "There is a cake waiting for you when you reach 1000 pts"},
     {score: 35, content: "You know where this is heading, right?"},
