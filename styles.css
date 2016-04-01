@@ -24,3 +24,9 @@ button.invisible {
     bottom: 45px;
     position: absolute;
 }
+
+button.jumpy {
+    left: 0px;
+    top: 45px;
+    position: absolute;
+}
