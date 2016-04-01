@@ -23,5 +23,6 @@ export var MESSAGES: Message[] = [
     {score: 140, content: "Piss off now"},
     {score: 160, content: "I lied about the cake, you know?"},
     {score: 180, content: "There is a word, that there are other buttons around..."},
-    {score: 200, content: "200? Give me a break..."},
+    {score: 200, content: "200? I'm out of messages..."},
+    {score: 220, content: "I think something is comming"},
 ]
