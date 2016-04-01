@@ -22,6 +22,6 @@ export var MESSAGES: Message[] = [
     {score: 120, content: "You owe me $5 for wear and tear on my button"},
     {score: 140, content: "Piss off now"},
     {score: 160, content: "I lied about the cake, you know?"},
-    {score: 180, content: "I just finish my morning shit and I'm really out of here"},
-    {score: 200, content: "*FLUSH*"},
+    {score: 180, content: "There is a word, that there are other buttons around..."},
+    {score: 200, content: "200? Give me a break..."},
 ]
