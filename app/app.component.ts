@@ -15,6 +15,7 @@ export class AppComponent {
     iScore: number = 0;
     sMessage: string = 'Click the button';
     bOtherButtonDisabled = false;
+    bInvisibleButtonDisabled = false;
     
     constructor(private _messageService: MessageService){ }
     
@@ -27,8 +28,14 @@ export class AppComponent {
         });
     }
     
-    doOtherClick(){
+    doClickMystery(){
         this.bOtherButtonDisabled = true;
         this.sMessage = "Why did you do that? I can't believe you are still alive with that adventurous clicking on weird buttons!";
+    }
+    
+    doClickInvisible(){
+        this.bInvisibleButtonDisabled = true;
+        this.iScore += 10;
+        this.sMessage = 'Achievement unlocked: master detective';
     }
 }

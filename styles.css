@@ -15,3 +15,12 @@ button.fancy:active {
     margin: 15px 0 10px 10px;
     box-shadow: 0 0 5px #888;
 }
+
+button.invisible {
+    color: white;
+    border: none;
+    background-color: white;
+    left: 32px;
+    bottom: 45px;
+    position: absolute;
+}
