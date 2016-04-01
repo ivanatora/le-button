@@ -38,4 +38,8 @@ export class AppComponent {
         this.iScore += 10;
         this.sMessage = 'Achievement unlocked: master detective';
     }
+    
+    doClickDebug(){
+        this.iScore = 170;
+    }
 }

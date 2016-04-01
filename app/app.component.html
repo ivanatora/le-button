@@ -1,3 +1,4 @@
+<!--<button (click)="doClickDebug()">Debug</button>-->
 <div *ngIf="iScore >= 12" class="score">Score: {{iScore}}</div>
 <button (click)="doClick()" [ngClass]="{fancy: iScore >= 15}">Le Button</button>
 <div *ngIf="iScore > 50 && ! bOtherButtonDisabled">
@@ -5,4 +6,4 @@
 </div>
 <div class="message">{{sMessage}}</div>
 
-<button *ngIf="iScore >= 180 && ! bInvisibleButtonDisabled" (click)="doClickInvisible()" class="invisible">I'm hidden</button>
+<button *ngIf="iScore >= 180 && ! bInvisibleButtonDisabled" (click)="doClickInvisible()" class="invisible">I'm sneaky</button>
