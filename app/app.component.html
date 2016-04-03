@@ -1,4 +1,4 @@
-<!--<button (click)="doClickDebug()">Debug</button>-->
+<button (click)="doClickDebug()">Debug</button>
 <div *ngIf="iScore >= 12" class="score">Score: {{iScore}}</div>
 <button (click)="doClick()" [ngClass]="{fancy: iScore >= 15}">Le Button</button>
 <div *ngIf="iScore > 50 && ! bOtherButtonDisabled">

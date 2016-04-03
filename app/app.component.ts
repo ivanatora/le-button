@@ -13,39 +13,11 @@ import {MessageService} from './message.service';
 class AnimateButton implements OnInit {
     constructor(private _ab: AnimationBuilder, private _e: ElementRef) { }
 
-    toggle(isVisible: boolean = false) {
-        let animation = this._ab.css();
-        animation
-            .setDuration(1000);
-
-        if (!isVisible) { // Goes up!
-            animation.setFromStyles({ height: '0', width: '50%', overflow: 'hidden' })
-                .setToStyles({ height: '300px' })
-        } else { // Goes down!
-            animation.setFromStyles({ height: '300px', width: '50%' })
-                .setToStyles({ height: '0' })
-        }
-        animation.start(this._e.nativeElement);
-    }
-    
-    run() {
-        let animation = this._ab.css();
-        animation.setDuration(500);
-        animation.setFromStyles({ transform: "scale(0, 0)", opacity: 0 });
-        animation.setToStyles({ transform: "scale(1.1, 1.5)", opacity: 1 });
-        animation.start(this._e.nativeElement).onComplete(() => {
-            animation.setDuration(500);
-            animation.setFromStyles({ transform: "scale(1.1, 1.5)" });
-            animation.setToStyles({ transform: "scale(1, 1)" });
-            animation.start(this._e.nativeElement);
-        });
-    }
-    
     jump() {
         let animation = this._ab.css();
-        console.log('juimp!', animation.browserDetails)
+        
         var top = Math.random() * 100 - 10; // leave some space for the button width itself
-        var left = Math.random() * 100;
+        var left = Math.random() * 100 - 10 // the same ^;
         animation.setDuration(1000);
         animation.setFromStyles({
             top: '0px',
@@ -61,7 +33,6 @@ class AnimateButton implements OnInit {
     }
     
     ngOnInit(){
-        console.log('ab init')
         this.jump();
     }
 }
@@ -81,8 +52,6 @@ export class AppComponent {
     bOtherButtonDisabled = false;
     bInvisibleButtonDisabled = false;
     bJumpyButtonDisabled = false;
-    
-    visible = true;
     
     constructor(private _messageService: MessageService){ }
     
